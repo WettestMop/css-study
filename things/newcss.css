@@ -1,0 +1,153 @@
+
+
+
+
+@font-face {
+    font-family: 'uni_sansheavy_caps';
+    src: url('fonts\\uni-sans.heavy-caps-webfont.woff2') format('woff2'),
+         url('fonts\\uni-sans.heavy-caps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'uni_sansthin_caps';
+    src: url('fonts\\uni-sans.thin-caps-webfont.woff2') format('woff2'),
+         url('fonts\\uni-sans.thin-caps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+#Header {
+    display:block;
+    font-family:"uni_sansheavy_caps";
+    color: white;
+    background-color: #23272A;
+    font-size: 25px;
+    width: inherit;
+    height: 100px;
+    text-align: left;
+    text-decoration: none;
+    border-style:ridge;
+    border-radius: 20px;
+    border-color:#23272A;
+    
+    
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color:white;
+    overflow:hidden;
+    text-decoration: none;
+
+}
+
+li {
+    float:left;
+    border-radius: 5px;
+    border-color: #23272A;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+
+}
+
+li a {
+    text-decoration: none;
+    color:white;
+    float:left;
+    text-align:left;
+    margin-top:15px;
+}
+
+li a:hover:not(.active){
+    background-color:rgb(87, 87, 87);
+    text-decoration: none;
+    color:white
+    
+    
+}
+body{
+    background-color:#2C2F33;
+}
+.active {
+    background-color: rgb(87, 87, 87);
+}
+p {
+    color: white;
+    display:block;
+    text-decoration: none;
+    margin-top: 40%;
+}
+
+#Content {
+    float:left;
+    display:block;
+    color:white;
+    height:inherit;
+    font-family:"uni_sansthin_caps";
+    width: 75%;
+    border-style:ridge;
+    border-radius: 20px;
+    border-color:#23272A;
+    background-color:#23272A;
+    margin-top: 1%;
+    text-align:center;
+}
+
+
+
+#sidebar {
+    background-color:#2C2F33;
+    width: 23%;
+    float:left;
+    margin-top: -8.3%;
+    margin-left: 76%;
+    height: inherit;
+    text-align:center;
+    color:white;
+    border-color:#23272A;
+    border-radius: 10px;
+    border-style: ridge;
+
+}
+
+#footer{
+    float:left;
+    
+    border-style:ridge;
+    border-color: #2C2F33;
+    border-radius: 10px;
+    width:100%;
+    margin-top: 25%;
+    background-color:#23272A;
+
+    
+    
+
+    height:50%;
+}
+#footer a {
+    text-decoration: none;
+    color:white;
+}
+
+footer{
+    color:white;
+    text-align: center;
+    
+}

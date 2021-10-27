@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+  <style>
+    body {
+      background-image: url('backgrounds/loginback.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+    label {
+      size: 50px;
+      position: fixed;
+      left: 50%;
+      margin-left: -50px;
+      margin-top: 90px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: red;
+    }
+    input {
+      size: 100px;
+
+      position: fixed;
+      left: 50%;
+      margin-left: -100px;
+      margin-top: 90px;
+
+    }
+
+  </style>
+
+  <script>
+  function Submitform() {
+    const pass = require("test.json");
+    var formname = document.getElementById("usrname");
+    var formpass = document.getElementById("pass");
+
+      const userperson = {
+        name: formname,
+        password: formpass
+      };
+      const jsonString = JSON.stringify(userperson);
+      console.log(jsonString);
+  }
+
+  </script>
+
+  <body>
+
+    <form name="LoginForm" onsubmit="return Submitform()" type="POST">
+      <label for="usrname">Username</label><br>
+      <input type="text" id="usrname" name="name"></input><br>
+      <label for="pass">Password</label><br>
+      <input type="password" id="pass" name="email"></input><br>
+      <input type="submit" value="Submit">
+    </form>
+
+
+  </body>
+</html>

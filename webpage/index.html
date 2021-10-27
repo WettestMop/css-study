@@ -1,0 +1,157 @@
+<html>
+  <link rel="stylesheet"
+  href="styles.css">
+  <head>
+    <script  type="text/javascript" src="jquery-3.1.0.min.js"></script>
+  </head>
+
+
+  <script>
+    let backgroundimg = fetch("https://api.nasa.gov/planetary/apod?api_key=dqcXPlIxNMY8BICLeXlLxaXtSRKmrdnnN8ocOxRj");
+    let filt = backgroundimg.find("")
+
+    
+    
+
+                
+    
+  </script>
+  <style>s
+  label {
+      color: white;
+      }
+  h1 {
+    text-align: center;
+    font-size: 70px;
+    font-family: "Garamond";
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  a {
+      font-family: "Playfair Display";
+      font-size: 20px; }
+
+  p {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Garamond";
+    font-style: strong;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .button {
+    border: black;
+    border-radius: 3px;
+    color: red;
+    }
+  body {
+    background-image: url('backgrounds/background2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+
+  body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+  </style>
+  <body onload="startTime()">
+
+
+
+
+    <header>
+        <a href="login.html">Login</a>
+        <a href="https://github.com/WettestMop/Github-Projects">Github</a>
+      </header>
+
+
+      
+
+  <script>
+  function startTime() {
+    const today = new Date();
+
+    var h = today.getHours();
+    var hh = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    if (h >= 12) {
+      ampm = "PM";
+
+    }
+    if (h <= 12) {
+      ampm = "AM";
+    }
+    m = checkTime(m);
+    s = checkTime(s);
+
+
+    if (ampm = "AM") {
+      document.getElementById('txt1').innerHTML =  "Good Morning!";
+    } else {
+      document.getElementById('txt1').innerHTML =  "Good Afternoon!";
+    }
+
+
+    if (h >= 12) {
+      h = h - 12;
+    }
+    if (h == 0) {
+      h = 12;
+    }
+    document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s + " " + ampm;
+    setTimeout(startTime, 1000);
+    }
+
+
+
+
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+  </script>
+
+
+
+
+
+
+  <title>Webpage</title>
+
+  <div class="centertitle">
+    <h1 id='txt'> </h1>
+  </div>
+  <div class="earth"></div>
+
+  <div class="center">
+
+
+    <p id='txt1'> </p>
+      </div>
+
+
+
+
+
+
+  </body>
+</html>
