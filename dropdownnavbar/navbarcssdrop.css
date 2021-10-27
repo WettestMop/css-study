@@ -1,0 +1,27 @@
+.navbar{
+    overflow: hidden;
+    background-color: #23272A;
+}
+
+.navbar a{
+    float: left;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #2C2F33;
+}
+
+.dropdownContent {
+    display:none;
+    position: absolute;
+
+}
+
+.dropdown:hover .dropdownContent {
+    display:block;
+}
